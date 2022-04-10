@@ -11,9 +11,11 @@ crate-type = ["cdylib"]
 wasm-bindgen = "0.2.77"
 embedded-graphics-web-simulator = {path = "../.."}
 embedded-graphics = "0.7.1"
-
-[target."cfg(debug_assertions)".dependencies]
+utils = { path = "/Users/ace/play/lib/utils" }
+effects = { path = "/Users/ace/play/medusa/effects" }
 console_error_panic_hook = "0.1.5"
+rgb = "0.8"
+eg-bdf = { path = "/Users/ace/play/clone/bdf/eg-bdf"}
 
 [dependencies.web-sys]
 version = "0.3.4"
